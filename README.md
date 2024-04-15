@@ -1,6 +1,7 @@
 # mygpsapp
 
-A new Flutter project.
+A new Flutter project which is used to get the GPS data and save TRD location for collecting 
+current collection data.
 
 ## Getting Started
 
