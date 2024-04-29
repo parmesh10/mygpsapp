@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'form_data.dart';
 
 const primaryColor = Color.fromARGB(255, 4, 211, 22);
 
@@ -13,6 +14,7 @@ class LocationScreen extends StatefulWidget {
 class LocationScreenState extends State<LocationScreen> {
   String? _latitude;
   String? _longitude;
+//  LocationScreenState({this._latitude,this._longitude});
   String locError = "Error in getting Location";
   //String? _locationMessage = '';
 bool loadvar = true;
@@ -61,7 +63,9 @@ bool savevar = true;
               Text('Latitude: $_latitude, Longitude: $_longitude'),
             if (_latitude != null && _longitude != null)
                ElevatedButton(
-              onPressed: (){},
+              onPressed: (){Navigator.push(context, MaterialPageRoute(builder:(context) => FormScreen(
+                latitude_1:_latitude!,
+                longitude_1:_longitude!,)),);},
               child: const Text('Save TRD Location'),
             ),
             if(savevar)

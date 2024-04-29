@@ -59,33 +59,7 @@ class HomeScreen extends StatelessWidget {
                       child: const Text('Get GPS'),
                     ),
                   ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Get Mast Location'),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Get spark Location'),
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Get Fault Location'),
-                    ),
-                  ),
-                ],
+                  ],
               ),
             ],
           ),
@@ -113,29 +87,3 @@ class HomeScreen extends StatelessWidget {
       );
     }
 }
-
-// class SecondScreen extends StatelessWidget {
-//     const SecondScreen({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//           backgroundColor: primaryColor,
-//           title: Row(
-//             children: <Widget>[
-//               ClipRRect(
-//                 borderRadius: BorderRadius.circular(15),
-//               child: Image.asset('assets/images/TRD1.jpg', width: 30, height: 30,),
-//             ),
-//               const SizedBox(width: 10),
-//               const Expanded(child: Text('TRD GPS DATA LOGGER'),),
-//             ],
-//           ), 
-//         ),
-//       body: const Center(
-//         child: Text('This is the second screen'),
-//       ),
-//     );
-//   }
-// }
